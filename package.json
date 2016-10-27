@@ -1,0 +1,23 @@
+{
+  "name": "bienna",
+  "version": "0.0.1",
+  "description": "bienna. short for \"black and white\" (for pronunciation b-and-wa.)",
+  "main": "bienna.js",
+  "dependencies": {
+    "webpack": "^1.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xx4159/bienna.git"
+  },
+  "author": "xx4159",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xx4159/bienna/issues"
+  },
+  "homepage": "https://github.com/xx4159/bienna#readme"
+}
