@@ -1,3 +1,5 @@
+let ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 module.exports = {
   entry: './src/bienna.js',
   output: {
@@ -14,8 +16,11 @@ module.exports = {
       {
         test: /\.scss$/,
         exclude: /node_modules/,
-        loaders: ['style', 'css', 'sass'],
+        loader: ExtractTextPlugin.extract('css-loader!sass-loader'),
       },
     ],
   },
+  plugins: [
+    new ExtractTextPlugin('bienna.css'),
+  ],
 };
