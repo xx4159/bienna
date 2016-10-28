@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "bienna. short for \"black and white\" (for pronunciation b-and-wa.)",
   "main": "bienna.js",
+  "engines": {
+    "node": ">=4.3.2"
+  },
   "dependencies": {
     "css-loader": "^0.25.0",
     "extract-text-webpack-plugin": "^1.0.1",
