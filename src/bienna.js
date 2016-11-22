@@ -11,10 +11,10 @@ class Bienna extends React.Component {
       isOpen: false,
     };
 
-    this.open = this.open.bind(this);
+    this.close = this.close.bind(this);
   }
 
-  open() {
+  close() {
     console.log(this);
   }
 
@@ -29,7 +29,9 @@ class Bienna extends React.Component {
             <button type="button"
               id="biennaClose"
               className="bienna__button"
-              onClick={ this.open }>OK</button>
+              onClick={ this.close }>
+              OK
+            </button>
           </div>
         </div>
     );
