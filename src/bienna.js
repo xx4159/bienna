@@ -19,27 +19,32 @@ class Bienna extends React.Component {
   }
 
   render() {
+    const title = this.props.title;
+    const text = this.props.text;
+
     return (
       <div id="bienna" className="bienna">
-          <div className="bienna__wrap">
-            <div className="bienna__inner">
-              <div className="bienna__header">{ this.props.title }</div>
-              <div className="bienna__body">{ this.props.text }</div>
-            </div>
-            <button type="button"
-              id="biennaClose"
-              className="bienna__button"
-              onClick={ this.close }>
-              OK
-            </button>
+        <div className="bienna__wrap">
+          <div className="bienna__inner">
+            <div className="bienna__header">{ title }</div>
+            <div className="bienna__body">{ text }</div>
           </div>
+          <button type="button"
+            id="biennaClose"
+            className="bienna__button"
+            onClick={ this.close }>
+            OK
+          </button>
         </div>
+      </div>
     );
   }
 }
 
 const element = (
-  <Bienna title="title" text="text" />
+  <Bienna
+    title="title"
+    text="text" />
 );
 
 ReactDom.render(
